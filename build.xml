@@ -62,7 +62,7 @@
     </target>
     <target name="CI">
         <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr" haltOnFailure="yes" halthOnError="yes">
+        <junit fork="yes" printsummary="withOutAndErr" haltOnFailure="yes" haltOnError="yes">
             <formatter type="xml"/>
             <test name="cs230.ci.AllTests" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
